@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*read about box-sizing, it's important */
+}
+
+body {
+    font-size: 16px; /* initial value for fonts */
+    background-image: url(../images/bckgrnd.jpg); /* linking to background file starting with ../ */
+    background-repeat: no-repeat; /* prevent image from repeating itself */
+    background-size: cover; /* image cover/fill
+     all crop(white) space on the page */
+
+    min-height: 100vh; /* minimal height
+     for bg with responsive value 1vh = 1%
+      of value (e.g 100vh = 100%) */
+    display: flex; /* just google how it works, it's complicated and hard to explain in 2 words*/
+    justify-content: center;/* same as in flex*/
+    align-items: center;/* another flex value*/
+    /* flex and grid highly recommended for responsive layouts, creating grids, templates (like html) */
+}
+.page {
+    min-width: 80vw;
+    min-height: 80vh;
+    border-radius: 10px; /* curve edges of your borders */
+    margin: auto; /* margin: auto - easiest way to center object but not the best practice */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 20px 1px rgba(135, 23, 23, 0.461);
+}
+.card {
+    width: 190px;
+    height: 320px;
+    background: linear-gradient(
+        60deg,
+        rgb(255, 237, 228),
+        white
+    );
+    margin: auto;
+    box-shadow: 0 5px 20px 1px rgba(135, 23, 23, 0.461);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    transition: transform 1s, background-color 1s;
+    position: relative;
+}
+.card:hover {
+    transform: scale(1.03);
+    background: linear-gradient(
+        60deg,
+        rgba(255, 237, 228, 0.913),
+        rgba(255, 255, 255, 0.906)
+    );
+}
+.qr {
+    box-shadow: 0 5px 15px 1px rgba(152, 79, 101, 0.678);
+    border-bottom: 2px rgb(255, 0, 51) solid;
+    border-radius: 10px;
+    margin: 10px;
+    background-image: url("../images/qr-code.png");
+    background-size: cover;
+    background-position: center center;
+    height: 50%;
+}
+.texts { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fonts {
+    font-family: 'Outfit', sans-serif;
+}
+.text1 {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.text1 span {
+    display: flex;
+    justify-content: center;
+}
+.text2 {
+    max-width: 10rem;
+    text-align: justify;
+    line-height: 15px;
+    font-size: 0.9rem;
+}
+.great-icon {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    transition: color 0.6s;
+}
+.link a:visited {
+    text-decoration: none;
+}
+.link a:hover {
+    color: rgb(100, 0, 22);
+    transition: color 0.6s;
+}
+
+
+
+
+
+
+
+
