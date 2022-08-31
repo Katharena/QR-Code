@@ -15,7 +15,7 @@ body {
 
     min-height: 100vh; /* minimal height
      for bg with responsive value 1vh = 1%
-      of value (e.g 100vh = 100%) */
+        of value (e.g 100vh = 100%) */
     display: flex; /* just google how it works, it's complicated and hard to explain in 2 words*/
     justify-content: center;/* same as in flex*/
     align-items: center;/* another flex value*/
